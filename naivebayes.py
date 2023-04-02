@@ -7,8 +7,9 @@ import pdb
 import numpy as np
 from sklearn.metrics import confusion_matrix
 import matplotlib.pyplot as plt
+from pathlib import Path
 
-ROOT = (r'C:\Users\riley\Desktop\CSC 3520 HW1\data')  # change to path where data is stored
+ROOT = Path.home()  # change to path where data is stored
 
 parser = argparse.ArgumentParser(description="Use a Naive Bayes model to classify text documents.")
 parser.add_argument('-x', '--training_data',
